@@ -4,25 +4,9 @@
   margin: 0;
 }
 
-#demo div {
-  font-size: 30px;
-  animation: spin 4s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(25deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(-25deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+#sliderDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
 }

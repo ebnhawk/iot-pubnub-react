@@ -1,0 +1,11 @@
+{
+  "parser": "babel-eslint",
+  "extends": "fullstack",
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "rules": {
+    "new-cap": ["error", { "newIsCap": true, "capIsNew": false }],
+    "react/no-did-mount-set-state": 0
+  }
+}
