@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import axios from 'axios'
 import PubNubReact from 'pubnub-react'
 import { PUBLISH_KEY, SUBSCRIBE_KEY } from './secrets'
 
@@ -22,12 +21,6 @@ export default class Sliders extends Component {
     })
     this.pubnub.getMessage('smart-led', msg => {
       console.log(msg)
-    })
-    this.pubnub.getStatus(st => {
-      this.pubnub.publish({
-        message: 'hello world from react',
-        channel: 'smart-led'
-      })
     })
   }
 

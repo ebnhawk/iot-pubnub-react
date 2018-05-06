@@ -36,4 +36,10 @@ app.use((err, req, res, next) => {
   res.send(err.message || 'Internal server error')
 })
 
+//Johnny-Five
+
+require('./led')()
+
+// Port
+
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`))

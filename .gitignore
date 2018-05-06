@@ -2,4 +2,5 @@ node_modules
 public/bundle.js
 server/secrets.js
 client/secrets.js
+jfTest.js
 .DS_Store
