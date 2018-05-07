@@ -14,22 +14,6 @@ export default class Sliders extends Component {
     this.pubnub.init(this)
   }
 
-  componentWillMount() {
-    this.pubnub.subscribe({
-      channels: ['smart-led'],
-      withPresence: true
-    })
-    this.pubnub.getMessage('smart-led', msg => {
-      console.log(msg)
-    })
-  }
-
-  componentWillUnmount() {
-    this.pubnub.unsubscribe({
-      channels: ['smart-led']
-    })
-  }
-
   handleChange(event) {
     const color = event.target.name
     const value = event.target.value
