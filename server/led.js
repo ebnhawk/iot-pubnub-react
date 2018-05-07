@@ -1,16 +1,15 @@
 /*eslint-disable camelcase */
 
-const { PUBLISH_KEY, SUBSCRIBE_KEY } = require('./secrets')
 const PubNub = require('pubnub')
 const pubnub = new PubNub({
-  subscribe_key: SUBSCRIBE_KEY,
-  publish_key: PUBLISH_KEY
+  subscribe_key: process.env.SUBSCRIBE_KEY,
+  publish_key: process.env.PUBLISH_KEY
 })
+const five = require('johnny-five')
 
 /*eslint-enable camelcase */
 
 const startLight = () => {
-  const five = require('johnny-five')
   let led
   let red = 0
   let green = 0
@@ -38,8 +37,7 @@ const startLight = () => {
         blue = message.color === 'blue' ? message.brightness : blue
         led.color({ red, green, blue })
       }
-    },
-    presence: event => console.log('Presence: ', event)
+    }
   })
 
   pubnub.subscribe({

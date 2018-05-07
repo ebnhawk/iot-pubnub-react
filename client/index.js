@@ -1,7 +1,6 @@
 import '@tmkelly28/tk-css'
 import './index.css'
 import Sliders from './Sliders.js'
-
 import React from 'react'
 import ReactDOM from 'react-dom'
 

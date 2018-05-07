@@ -5,19 +5,15 @@
   "license": "MIT",
   "dependencies": {
     "@tmkelly28/tk-css": "^1.0.2",
-    "axios": "^0.18.0",
-    "body-parser": "^1.17.2",
+    "dotenv": "^5.0.1",
     "express": "^4.15.3",
     "johnny-five": "^0.14.3",
     "morgan": "^1.8.2",
-    "pg": "^6.4.0",
-    "pg-hstore": "^2.3.2",
     "pubnub": "^4.20.3",
     "pubnub-react": "^1.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-redux": "^5.0.7",
-    "sequelize": "^4.2.1"
+    "react-redux": "^5.0.7"
   },
   "scripts": {
     "start": "webpack -w & nodemon server/app.js --ignore public"

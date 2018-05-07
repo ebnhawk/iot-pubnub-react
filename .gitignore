@@ -1,6 +1,8 @@
 node_modules
 public/bundle.js
+.env
 server/secrets.js
 client/secrets.js
+presentation-notes
 jfTest.js
 .DS_Store
